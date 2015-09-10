@@ -24,6 +24,7 @@
            type:(NSString*)type
         expiry:(time_t)expiry;
 
+- (NSURL*)get_url:(NSString*)path;
 - (NSURL*)put_url:(NSString*)path;
 
 @end

@@ -77,6 +77,15 @@ static NSString* sha1_hmac_base64(NSString* key, NSString* data)
 }
 
 
+- (NSURL*)get_url:(NSString*)path
+{
+    return [self url:path
+                  verb:@"GET"
+                  type:@""
+                expiry:(60 * 60)];
+}
+
+
 -(id)init
 {
     if (self = [super init])  {
